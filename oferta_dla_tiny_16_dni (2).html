@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magiczna Sri Lanka z Tiną - 16 Dni</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sriOrange: '#F28c00', 
+                        sriBrown: '#683C11',  
+                        sriBg: '#fcfaf8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #fcfaf8; }
+        .timeline-dot {
+            position: absolute;
+            left: -33px;
+            top: 24px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #F28c00;
+            border: 3px solid #fcfaf8;
+            box-shadow: 0 0 0 2px #F28c00;
+            z-index: 10;
+        }
+        .timeline-line {
+            position: absolute;
+            left: -26px;
+            top: 40px;
+            bottom: -40px;
+            width: 2px;
+            background-color: rgba(242, 140, 0, 0.3);
+            z-index: 0;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(104, 60, 17, 0.8), rgba(104, 60, 17, 0.5)), url('https://images.unsplash.com/photo-1539617546058-a846c5fc36d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-gray-800 font-sans antialiased selection:bg-sriOrange selection:text-white pb-20">
+
+    <header class="hero-bg text-white py-24 md:py-32 px-6 shadow-xl relative overflow-hidden">
+        <div class="max-w-5xl mx-auto relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-sriOrange text-white text-sm font-semibold tracking-wider mb-4 uppercase shadow-lg">
+                Oferta Dedykowana - 16 Dni
+            </span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-md">
+                Odkryj Sri Lankę z Tiną
+            </h1>
+            <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-8 text-gray-100">
+                Północ, góry, safari i oceaniczna bryza.
+            </p>
+            <div class="inline-flex flex-col md:flex-row items-center gap-6 bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-6 shadow-xl">
+                <div class="flex items-center gap-3">
+                    <i class="far fa-calendar-alt text-3xl text-sriOrange"></i>
+                    <div class="text-left">
+                        <p class="font-semibold text-lg text-white">Termin podróży</p>
+                        <p class="text-sm text-gray-200">29 Stycznia - 13 Lutego 2027</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16">
+        
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-sriBrown mb-4">Szczegółowy Plan Podróży</h2>
+            <div class="w-24 h-1 bg-sriOrange mx-auto rounded-full"></div>
+            <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+                Spersonalizowana trasa obejmująca dziką Północ, malownicze góry i leniwy wypoczynek na plażach.
+            </p>
+        </div>
+
+        <div class="space-y-10 relative ml-4 md:ml-8 pb-12">
+            
+            <!-- DZIEŃ 1 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 1 (29.01): Witamy na Sri Lance</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Airport &rarr; Kalpitiya</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">01:55 AM:</strong> Przylot na lotnisko (Arrival).</p>
+                            <p class="text-sm text-gray-700">Powitanie, a następnie transfer wzdłuż zachodniego wybrzeża do miejscowości Kalpitiya. Pierwszy dzień to czas wolny na odespanie długiej podróży i relaks z widokiem na lagunę.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>The Blue Lagoon Resort, Kalpitiya (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 2 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 2 (30.01): Uroki Kalpitiyi</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Kalpitiya</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <div class="bg-orange-50 p-3 rounded-lg border border-orange-100 mt-2 inline-block">
+                                <p class="text-sm font-bold text-gray-800"><i class="fas fa-compass text-sriOrange mr-2"></i>08:00 - Lokalne Aktywności (Opcjonalnie)</p>
+                                <p class="text-xs text-gray-600">Dzień na luzie. Możliwość skorzystania z lokalnych wycieczek wodnych, kitesurfingu lub innych atrakcji na lagunie (dodatkowo płatne na miejscu).</p>
+                            </div>
+                            <p class="text-sm text-gray-700 mt-3">Spokojny dzień, by nacieszyć się plażą, wodą i egzotycznym klimatem zachodniego wybrzeża.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>The Blue Lagoon Resort, Kalpitiya (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 3 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 3 (31.01): Fort Holenderski lub Rejs</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Kalpitiya</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <div class="bg-orange-50 p-3 rounded-lg border border-orange-100 mt-2 inline-block">
+                                <p class="text-sm font-bold text-gray-800"><i class="fas fa-ship text-sriOrange mr-2"></i>09:30 - Fort Holenderski lub Boat Trip (Opcjonalnie)</p>
+                                <p class="text-xs text-gray-600">Wybierzcie wycieczkę historyczną do kolonialnego fortu lub relaksujący rejs łodzią (dodatkowo płatne).</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>The Blue Lagoon Resort, Kalpitiya (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 4 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 4 (01.02): Wilpattu i Północna Prowincja</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Kalpitiya &rarr; Wilpattu &rarr; Jaffna</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">08:00:</strong> <strong>Wilpattu Safari</strong> - Poranna wyprawa jeepami do największego parku narodowego na Sri Lance. Będziemy poszukiwać m.in. dostojnych lampartów, niedźwiedzi i słoni.</p>
+                            <p><strong class="text-sriOrange">14:00:</strong> Lunch (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">19:00:</strong> Check in w Jaffnie. Docieramy na intrygującą, daleką Północ pełną tamilskiej kultury.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>The Thinnai Hotel, Jaffna (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 5 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 5 (02.02): Wysepki, Konie i Twierdza</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Jaffna (Wyspa Delft)</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">08:30:</strong> <strong>Ferry Crossing to Delft Island</strong> - Przeprawa promowa na odległą wyspę Delft.</p>
+                            <p><strong class="text-sriOrange">10:00:</strong> Eksploracja wyspy zlokalizowanej blisko brzegów Indii: obserwacja dzikich koni (Wild Horses), ogromne drzewo Baobab (Baobab tree), zabytkowa latarnia morska (Light house) i stare kolonialne ruiny (Colonial Ruins).</p>
+                            <p><strong class="text-sriOrange">12:30:</strong> Powrót promem (Start back to Jaffna by ferry).</p>
+                            <p><strong class="text-sriOrange">14:30:</strong> Lunch (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">15:30:</strong> <strong>Visit Jaffna Fort</strong> - Zwiedzanie potężnego fortu kolonialnego w Jaffnie, usytuowanego nad brzegiem morza.</p>
+                            <p><strong class="text-sriOrange">18:30:</strong> Check in - powrót do hotelu.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>The Thinnai Hotel, Jaffna (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 6 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 6 (03.02): Nallur Kovil i Zjazd na Południe</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Jaffna &rarr; Anuradhapura</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">08:00:</strong> Start.</p>
+                            <p><strong class="text-sriOrange">09:00:</strong> <strong>Nallur Kovil</strong> - Zobaczcie niezwykle barwną i najważniejszą na północy świątynię hinduską, pełną rytuałów i ceremonii.</p>
+                            <p><strong class="text-sriOrange">12:00:</strong> <strong>Elephant pass Lagoon view point</strong> - Postój na punkcie widokowym nad groblą "Przesmyk Słoni", łączącą półwysep Jaffna z resztą kraju.</p>
+                            <p><strong class="text-sriOrange">14:00:</strong> Lunch (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">18:00:</strong> <strong>Anuradhapura Site Visit</strong> - Zwiedzanie w miękkim świetle zachodzącego słońca rozległych ruin pierwszej starożytnej stolicy wyspy.</p>
+                            <p><strong class="text-sriOrange">20:00:</strong> Check in w Anuradhapurze.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Hotel Heladiv, Anuradhapura (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 7 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 7 (04.02): Magia Ruin i Wędrówka w Górach</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Anuradhapura &rarr; Ritigala &rarr; Riverston</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">08:00:</strong> Start.</p>
+                            <p><strong class="text-sriOrange">10:30:</strong> <strong>Ritigala Monastery Visit</strong> - Klimatyczny spacer ukrytą w lesie, antyczną brukowaną ścieżką wiodącą do starożytnego kompleksu mnichów-pustelników.</p>
+                            <p><strong class="text-sriOrange">12:30:</strong> Lunch in Local Village (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">14:30:</strong> <strong>Riverstern Hike</strong> - Trekking po wietrznym, rzadko uczęszczanym przez masowych turystów paśmie górskim Knuckles, oferującym fenomenalne panoramy.</p>
+                            <p><strong class="text-sriOrange">18:30:</strong> Check in w górskim domku.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Cristal Riverston Deck (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 8 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 8 (05.02): Wschód Słońca i Wodospady</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Riverston</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">06:30 AM:</strong> Start o świcie.</p>
+                            <p><strong class="text-sriOrange">07:30:</strong> <strong>Manigala Hike</strong> - Wczesnoporanny, rześki trekking po skalistej grani Manigala ("Elephant Rock") w Rezerwacie Gór Knuckles.</p>
+                            <p><strong class="text-sriOrange">12:30:</strong> <strong>Sera Ella Waterfall</strong> - Przystanek przy pięknych kaskadach i relaks na łonie natury.</p>
+                            <p><strong class="text-sriOrange">15:00:</strong> Lunch (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">16:00:</strong> Check in - krótki dzień, odpoczynek po aktywnym poranku.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Cristal Riverston Deck (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 9 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 9 (06.02): Bezkresne Łąki</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Riverston &rarr; Kithulgala</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">06:30 AM:</strong> Start o świcie.</p>
+                            <p><strong class="text-sriOrange">07:30:</strong> <strong>Walpolamulla Trekking</strong> - Poranna wyprawa szlakami zielonych gór (w okolice starej, opuszczonej lankijskiej wioski).</p>
+                            <p><strong class="text-sriOrange">12:00:</strong> <strong>Pitawalapathana</strong> - Spacer po unikalnej, rozległej sawannie trawiastej na szczytach pasma z widokiem opadającym w stromą przepaść.</p>
+                            <p><strong class="text-sriOrange">14:30:</strong> Lunch (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">15:30:</strong> <strong>Bambarakiriella Waterfall</strong> - Kolejny urokliwy wodospad z mostem linowym zawieszonym nad chłodną wodą.</p>
+                            <p><strong class="text-sriOrange">20:00:</strong> Check in w nowym, zalesionym regionie Kithulgali.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Forest Edge, Kithulgala (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 10 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 10 (07.02): Adrenalina i Góry</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Kithulgala &rarr; Haputhale</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">09:00:</strong> Start.</p>
+                            <div class="bg-orange-50 p-3 rounded-lg border border-orange-100 mt-2 inline-block w-full">
+                                <p class="text-sm font-bold text-gray-800"><i class="fas fa-water text-sriOrange mr-2"></i>10:00 - Water Rafting (Opcjonalnie)</p>
+                                <p class="text-xs text-gray-600">Pełen adrenaliny spływ pontonami rwącą rzeką Kelani. (Decyzja zostanie podjęta bliżej dnia atrakcji. Atrakcja płatna dodatkowo).</p>
+                            </div>
+                            <p class="mt-4">Następnie przejazd w górskie rejony Haputhale.</p>
+                            <p><strong class="text-sriOrange">18:00:</strong> Check in w górach.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Nilowin Glenanore Guesthouse, Haputhale (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 11 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 11 (08.02): Widoki Pana Liptona i Gigantyczny Wodospad</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Haputhale &rarr; Kalametiya</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">08:30:</strong> Start.</p>
+                            <p><strong class="text-sriOrange">Poranek:</strong> <strong>Lipton Seat</strong> - Przejazd na słynny punkt widokowy pośród mglistych plantacji herbaty Sir Thomasa Liptona.</p>
+                            <p><strong class="text-sriOrange">13:00:</strong> Lunch w trakcie zjazdu z gór na gorące południe (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">15:30:</strong> <strong>Diyaluma Water(fall)</strong> - Majestatyczny, drugi co do wysokości wodospad na wyspie, spadający kaskadowo ze stromej skały. Wyjątkowo fotogeniczne miejsce.</p>
+                            <p><strong class="text-sriOrange">Wieczór:</strong> Docieramy na słoneczne wybrzeże oceanu i meldujemy się w urokliwym kurorcie w Kalametiya.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Lankavatara Ocean Retreat & Spa (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 12 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 12 (09.02): Safari Ptaków o Świcie</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-map-marker-alt mr-1"></i>Kalametiya &rarr; Ambalangoda</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriOrange">06:00 AM:</strong> <strong>Kalamatiya Lagoon Safari</strong> - Wczesny, cichy rejs katamaranem o poranku po dziewiczej lagunie, będącej doskonałym sanktuarium rzadkich i niezwykłych gatunków ptaków.</p>
+                            <p><strong class="text-sriOrange">13:00:</strong> Lunch (we własnym zakresie).</p>
+                            <p><strong class="text-sriOrange">14:30:</strong> Check in w Ambalangodzie (przesuwamy się wyżej w kierunku zachodnich plaż).</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm">
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                            <p class="font-medium text-sriBrown mb-3"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Samudra Villa Ambalangoda (2x family room)</p>
+                            <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                            <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadanie (BB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DNI 13-15 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div><div class="timeline-line"></div>
+                <div class="bg-orange-50 rounded-2xl shadow-sm border border-orange-100 overflow-hidden group">
+                    <div class="bg-sriOrange text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dni 13, 14 i 15 (10.02 - 12.02): Plażowy Raj</h3>
+                        <span class="text-white text-sm font-medium"><i class="fas fa-umbrella-beach mr-1"></i>Ambalangoda &rarr; Katunayake</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-3">
+                            <p><strong class="text-sriBrown">Dzień 13 & 14 (10.02 - 11.02): Czas wolny (Rest)</strong></p>
+                            <p class="text-sm text-gray-700">Dwa pełne dni beztroskiego relaksu na złotym piasku zachodniego wybrzeża. Owoce morza, szum Oceanu Indyjskiego, kokosy – naładowanie energii na 100%.</p>
+                            <div class="border-t border-orange-200 pt-4 mt-4">
+                                <p><strong class="text-sriBrown">Dzień 15 (12.02): Ostatnie chwile i Nocny przejazd</strong></p>
+                                <p class="text-sm text-gray-700">Kolejny dzień leniwego wypoczynku.</p>
+                                <p class="text-sm text-gray-700 font-bold text-sriOrange"><i class="fas fa-car mr-2"></i>15:00 - Evening drive to Katunayake</p>
+                                <p class="text-sm text-gray-700">Późnym popołudniem ruszamy w górę wybrzeża, by wieczorem zameldować się w tranzytowym hotelu zaraz obok lotniska. Prześpimy się przed lotem.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 border border-orange-200 text-sm shadow-sm flex flex-col justify-between">
+                            <div>
+                                <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Zakwaterowanie</p>
+                                <p class="font-medium text-sriBrown mb-1"><i class="fas fa-hotel mr-2 text-sriOrange"></i>Samudra Villa Ambalangoda (2 noce)</p>
+                                <p class="font-medium text-sriBrown"><i class="fas fa-hotel mr-2 text-gray-400"></i><span class="text-gray-500">Lucky Transit (1 noc przed wylotem)</span></p>
+                            </div>
+                            <div class="mt-4">
+                                <p class="font-bold text-gray-500 mb-1 uppercase text-xs">Wyżywienie</p>
+                                <p class="font-medium text-sriBrown"><i class="fas fa-utensils mr-2 text-sriOrange"></i>Śniadania (BB)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DZIEŃ 16 -->
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-dot"></div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group">
+                    <div class="bg-sriBrown text-white px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-serif text-xl font-bold">Dzień 16 (13.02): Powrót do Polski</h3>
+                        <span class="text-sriOrange text-sm font-medium"><i class="fas fa-plane-departure mr-1"></i>Katunayake &rarr; Lotnisko</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 space-y-4">
+                            <p><strong class="text-sriOrange">02:15 AM:</strong> Krótki przejazd i zameldowanie się na lotnisku w nocy (Arrival to airport).</p>
+                            <p><strong class="text-sriOrange">04:15 AM:</strong> Flight to Poland. Z potężnym bagażem opowieści, wspomnień i zdjęć żegnamy magiczną Sri Lankę. Szczęśliwej podróży powrotnej!</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100 text-sm flex items-center">
+                            <p class="font-bold text-gray-500 uppercase text-xs"><i class="fas fa-check-circle text-green-500 mr-1"></i>Zakończenie wyprawy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- PRICING SECTION -->
+        <section class="mt-16 border-t border-gray-200 pt-16">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl font-bold text-sriBrown mb-2">Cena Wyprawy</h2>
+                <div class="w-16 h-1 bg-sriOrange mx-auto rounded-full mt-2"></div>
+            </div>
+            
+            <div class="max-w-md mx-auto bg-white rounded-3xl p-8 shadow-xl border-t-8 border-sriBrown text-center relative hover:-translate-y-1 transition-transform duration-300">
+                <div class="my-4">
+                    <span class="text-5xl font-extrabold text-sriBrown">1075</span>
+                    <span class="text-xl text-gray-500 font-medium">USD</span>
+                    <p class="text-sm text-gray-500 mt-2 font-medium">za osobę (przy grupie 8 osób)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INCLUSIONS / EXCLUSIONS -->
+        <section class="mt-16 bg-white rounded-3xl shadow-lg p-8 md:p-12 border border-gray-100">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i> Cena zawiera:
+                    </h3>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i><span class="text-gray-700"><strong>Zakwaterowanie w hotelach ze śniadaniami</strong> (Wyżywienie BB) w pokojach 4-osobowych.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i><span class="text-gray-700"><strong>Transfery</strong> z lotniska i na lotnisko.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i><span class="text-gray-700"><strong>Transport wygodnym busem</strong>, paliwo, opłaty za autostrady i parkingi na całej trasie.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i><span class="text-gray-700">Opieka <strong>lokalnego doświadczonego kierowcy</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i><span class="text-gray-700">Opieka <strong>polskojęzycznego przewodnika</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i><span class="text-gray-700"><strong>Wejścia do wszystkich wymienionych atrakcji</strong> w programie.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i><span class="text-gray-700"><strong>Nielimitowana woda w butelkach</strong> do picia podczas objazdówki.</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-times-circle text-gray-400 mr-3"></i> Cena nie zawiera:
+                    </h3>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start"><i class="fas fa-minus text-gray-400 mt-1 mr-3"></i><span class="text-gray-600">Międzynarodowe <strong>bilety lotnicze</strong>.</span></li>
+                        <li class="flex items-start"><i class="fas fa-minus text-gray-400 mt-1 mr-3"></i><span class="text-gray-600"><strong>Ubezpieczenie</strong> turystyczne i zdrowotne.</span></li>
+                        <li class="flex items-start"><i class="fas fa-minus text-gray-400 mt-1 mr-3"></i><span class="text-gray-600"><strong>Wszystkie pozostałe lunche i obiadokolacje</strong> (wyżywienie opiera się na śniadaniach).</span></li>
+                        <li class="flex items-start"><i class="fas fa-minus text-gray-400 mt-1 mr-3"></i><span class="text-gray-600"><strong>Pamiątki</strong> i wydatki natury osobistej.</span></li>
+                        <li class="flex items-start"><i class="fas fa-minus text-gray-400 mt-1 mr-3"></i><span class="text-gray-600">Napiwki dla kierowcy i przewodnika.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-sriBrown text-white text-center py-10 border-t-4 border-sriOrange">
+        <div class="max-w-4xl mx-auto px-6">
+            <h4 class="font-serif text-2xl mb-4 text-sriOrange">Gotowa na Wyprawę Marzeń?</h4>
+            <p class="text-gray-300 mb-6">Ten 16-dniowy plan to recepta na idealną, egzotyczną przygodę z przyjaciółmi lub rodziną.</p>
+            <a href="mailto:lila@thecinnamontours.com" class="inline-block bg-sriOrange hover:bg-orange-600 transition-colors text-white font-bold py-3 px-8 rounded-full shadow-lg">
+                Masz pytania? Napisz do mnie
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
